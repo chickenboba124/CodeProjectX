@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="pageSheet" id="BYZ-38-t0r" customClass="ViewController" customModule="FirstV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0f4-XO-THF">
+                                <rect key="frame" x="0.0" y="28" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="490068684.32496601">
+                                    <!--2016-07-13 02:11:24 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2q-ai-nWK">
+                                <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <state key="normal" title="What day of the week was it?"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Znz-QS-Z9v"/>
+                                    <action selector="sendDateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QWj-PL-H1o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8h-Ds-5El">
+                                <rect key="frame" x="125" y="335" width="350" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Aee-2b-RVC"/>
+                                    <constraint firstAttribute="height" constant="21" id="dcl-qP-Png"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I8h-Ds-5El" secondAttribute="bottom" constant="244" id="07S-QA-Daf"/>
+                            <constraint firstItem="I8h-Ds-5El" firstAttribute="centerX" secondItem="x2q-ai-nWK" secondAttribute="centerX" id="O6Z-9s-Ng1"/>
+                            <constraint firstItem="0f4-XO-THF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jam-aE-zAO"/>
+                            <constraint firstItem="0f4-XO-THF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="pQF-Ov-WAn"/>
+                            <constraint firstItem="I8h-Ds-5El" firstAttribute="top" secondItem="x2q-ai-nWK" secondAttribute="bottom" constant="20" id="pwn-jM-cXn"/>
+                            <constraint firstAttribute="trailing" secondItem="0f4-XO-THF" secondAttribute="trailing" id="sH5-sm-Dkz"/>
+                            <constraint firstItem="I8h-Ds-5El" firstAttribute="centerX" secondItem="0f4-XO-THF" secondAttribute="centerX" id="yfO-n4-kEJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonClicked" destination="x2q-ai-nWK" id="KpO-3G-be2"/>
+                        <outlet property="dateLabel" destination="I8h-Ds-5El" id="zeV-56-25M"/>
+                        <outlet property="getDatePicker" destination="0f4-XO-THF" id="aVe-OE-IpQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,2828 @@
+//
+//  AppDelegate.swift
+//  ButtonAlert
+//
+//  Created by micheal kent on 7/13/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+}
+
+//
+//  AppDelegate.swift
+//  ButtonAlert
+//
+//  Created by micheal kent on 7/13/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+}
+
+//
+//  ViewController.swift
+//  ButtonAlert
+//
+//  Created by micheal kent on 7/13/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    @IBAction func clickedButton(sender: AnyObject) {
+        
+        let alert:UIAlertController = UIAlertController(title: "Button Tapped!", message: "A button was tapped", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let alertAction: UIAlertAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) { (a: UIAlertAction) -> Void in
+            print("user clicked ok")
+        }
+        let alertAction1: UIAlertAction = UIAlertAction(title: "Deny", style: UIAlertActionStyle.Default) { (a: UIAlertAction) -> Void in
+            print("user clicked deny")
+        }
+        alert.addAction(alertAction)
+        alert.addAction(alertAction1)
+        self.presentViewController(alert, animated: true) { 
+            () -> Void in
+            print("alert presented")
+        }
+        
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+//
+//  ViewController.swift
+//  ButtonAlert
+//
+//  Created by micheal kent on 7/13/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    @IBAction func clickedButton(sender: AnyObject) {
+        
+        let alert:UIAlertController = UIAlertController(title: "Button Tapped!", message: "A button was tapped", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let alertAction: UIAlertAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) { (a: UIAlertAction) -> Void in
+            print("user clicked ok")
+        }
+        let alertAction1: UIAlertAction = UIAlertAction(title: "Deny", style: UIAlertActionStyle.Default) { (a: UIAlertAction) -> Void in
+            print("user clicked deny")
+        }
+        alert.addAction(alertAction)
+        alert.addAction(alertAction1)
+        self.presentViewController(alert, animated: true) { 
+            () -> Void in
+            print("alert presented")
+        }
+        
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C9F7FD1D371BB0001AA146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9F7FC1D371BB0001AA146 /* AppDelegate.swift */; };
+		50C9F7FF1D371BB0001AA146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9F7FE1D371BB0001AA146 /* ViewController.swift */; };
+		50C9F8021D371BB0001AA146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C9F8001D371BB0001AA146 /* Main.storyboard */; };
+		50C9F8041D371BB0001AA146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C9F8031D371BB0001AA146 /* Assets.xcassets */; };
+		50C9F8071D371BB0001AA146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C9F8051D371BB0001AA146 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50C9F7F91D371BB0001AA146 /* ButtonAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C9F7FC1D371BB0001AA146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50C9F7FE1D371BB0001AA146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50C9F8011D371BB0001AA146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50C9F8031D371BB0001AA146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50C9F8061D371BB0001AA146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50C9F8081D371BB0001AA146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C9F7F61D371BB0001AA146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C9F7F01D371BB0001AA146 = {
+			isa = PBXGroup;
+			children = (
+				50C9F7FB1D371BB0001AA146 /* ButtonAlert */,
+				50C9F7FA1D371BB0001AA146 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50C9F7FA1D371BB0001AA146 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C9F7F91D371BB0001AA146 /* ButtonAlert.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C9F7FB1D371BB0001AA146 /* ButtonAlert */ = {
+			isa = PBXGroup;
+			children = (
+				50C9F7FC1D371BB0001AA146 /* AppDelegate.swift */,
+				50C9F7FE1D371BB0001AA146 /* ViewController.swift */,
+				50C9F8001D371BB0001AA146 /* Main.storyboard */,
+				50C9F8031D371BB0001AA146 /* Assets.xcassets */,
+				50C9F8051D371BB0001AA146 /* LaunchScreen.storyboard */,
+				50C9F8081D371BB0001AA146 /* Info.plist */,
+			);
+			path = ButtonAlert;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C9F7F81D371BB0001AA146 /* ButtonAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C9F80B1D371BB0001AA146 /* Build configuration list for PBXNativeTarget "ButtonAlert" */;
+			buildPhases = (
+				50C9F7F51D371BB0001AA146 /* Sources */,
+				50C9F7F61D371BB0001AA146 /* Frameworks */,
+				50C9F7F71D371BB0001AA146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ButtonAlert;
+			productName = ButtonAlert;
+			productReference = 50C9F7F91D371BB0001AA146 /* ButtonAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C9F7F11D371BB0001AA146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "micheal kent";
+				TargetAttributes = {
+					50C9F7F81D371BB0001AA146 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 50C9F7F41D371BB0001AA146 /* Build configuration list for PBXProject "ButtonAlert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50C9F7F01D371BB0001AA146;
+			productRefGroup = 50C9F7FA1D371BB0001AA146 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C9F7F81D371BB0001AA146 /* ButtonAlert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C9F7F71D371BB0001AA146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C9F8071D371BB0001AA146 /* LaunchScreen.storyboard in Resources */,
+				50C9F8041D371BB0001AA146 /* Assets.xcassets in Resources */,
+				50C9F8021D371BB0001AA146 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C9F7F51D371BB0001AA146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C9F7FF1D371BB0001AA146 /* ViewController.swift in Sources */,
+				50C9F7FD1D371BB0001AA146 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50C9F8001D371BB0001AA146 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C9F8011D371BB0001AA146 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50C9F8051D371BB0001AA146 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C9F8061D371BB0001AA146 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50C9F8091D371BB0001AA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50C9F80A1D371BB0001AA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50C9F80C1D371BB0001AA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ButtonAlert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.ButtonAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50C9F80D1D371BB0001AA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ButtonAlert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.ButtonAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C9F7F41D371BB0001AA146 /* Build configuration list for PBXProject "ButtonAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C9F8091D371BB0001AA146 /* Debug */,
+				50C9F80A1D371BB0001AA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C9F80B1D371BB0001AA146 /* Build configuration list for PBXNativeTarget "ButtonAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C9F80C1D371BB0001AA146 /* Debug */,
+				50C9F80D1D371BB0001AA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50C9F7F11D371BB0001AA146 /* Project object */;
+}
+//
+//  AppDelegate.swift
+//  DatePIck2
+//
+//  Created by micheal kent on 7/12/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+}
+
+//
+//  AppDelegate.swift
+//  DatePIck2
+//
+//  Created by micheal kent on 7/12/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+}
+
+//
+//  ViewController.swift
+//  DatePIck2
+//
+//  Created by micheal kent on 7/12/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var datePick: UIDatePicker!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    @IBAction func sendDateButton(sender: AnyObject) {
+        
+        let newDate:NSDate = datePick.date
+        
+        let formatter:NSDateFormatter = NSDateFormatter()
+        formatter.dateFormat = "EEEE"
+        dateLabel.text = formatter.stringFromDate(newDate)
+        
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+//
+//  ViewController.swift
+//  DatePIck2
+//
+//  Created by micheal kent on 7/12/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var datePick: UIDatePicker!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    @IBAction func sendDateButton(sender: AnyObject) {
+        
+        let newDate:NSDate = datePick.date
+        
+        let formatter:NSDateFormatter = NSDateFormatter()
+        formatter.dateFormat = "EEEE"
+        dateLabel.text = formatter.stringFromDate(newDate)
+        
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		507AC3551D35DEFE00B28972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507AC3541D35DEFE00B28972 /* AppDelegate.swift */; };
+		507AC3571D35DEFE00B28972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507AC3561D35DEFE00B28972 /* ViewController.swift */; };
+		507AC35A1D35DEFE00B28972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507AC3581D35DEFE00B28972 /* Main.storyboard */; };
+		507AC35C1D35DEFE00B28972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507AC35B1D35DEFE00B28972 /* Assets.xcassets */; };
+		507AC35F1D35DEFE00B28972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507AC35D1D35DEFE00B28972 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		507AC3511D35DEFE00B28972 /* DatePIck2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePIck2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		507AC3541D35DEFE00B28972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		507AC3561D35DEFE00B28972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		507AC3591D35DEFE00B28972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		507AC35B1D35DEFE00B28972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		507AC35E1D35DEFE00B28972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		507AC3601D35DEFE00B28972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		507AC34E1D35DEFE00B28972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		507AC3481D35DEFE00B28972 = {
+			isa = PBXGroup;
+			children = (
+				507AC3531D35DEFE00B28972 /* DatePIck2 */,
+				507AC3521D35DEFE00B28972 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		507AC3521D35DEFE00B28972 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				507AC3511D35DEFE00B28972 /* DatePIck2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		507AC3531D35DEFE00B28972 /* DatePIck2 */ = {
+			isa = PBXGroup;
+			children = (
+				507AC3541D35DEFE00B28972 /* AppDelegate.swift */,
+				507AC3561D35DEFE00B28972 /* ViewController.swift */,
+				507AC3581D35DEFE00B28972 /* Main.storyboard */,
+				507AC35B1D35DEFE00B28972 /* Assets.xcassets */,
+				507AC35D1D35DEFE00B28972 /* LaunchScreen.storyboard */,
+				507AC3601D35DEFE00B28972 /* Info.plist */,
+			);
+			path = DatePIck2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		507AC3501D35DEFE00B28972 /* DatePIck2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507AC3631D35DEFE00B28972 /* Build configuration list for PBXNativeTarget "DatePIck2" */;
+			buildPhases = (
+				507AC34D1D35DEFE00B28972 /* Sources */,
+				507AC34E1D35DEFE00B28972 /* Frameworks */,
+				507AC34F1D35DEFE00B28972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatePIck2;
+			productName = DatePIck2;
+			productReference = 507AC3511D35DEFE00B28972 /* DatePIck2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		507AC3491D35DEFE00B28972 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "micheal kent";
+				TargetAttributes = {
+					507AC3501D35DEFE00B28972 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 507AC34C1D35DEFE00B28972 /* Build configuration list for PBXProject "DatePIck2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 507AC3481D35DEFE00B28972;
+			productRefGroup = 507AC3521D35DEFE00B28972 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				507AC3501D35DEFE00B28972 /* DatePIck2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		507AC34F1D35DEFE00B28972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507AC35F1D35DEFE00B28972 /* LaunchScreen.storyboard in Resources */,
+				507AC35C1D35DEFE00B28972 /* Assets.xcassets in Resources */,
+				507AC35A1D35DEFE00B28972 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		507AC34D1D35DEFE00B28972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507AC3571D35DEFE00B28972 /* ViewController.swift in Sources */,
+				507AC3551D35DEFE00B28972 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		507AC3581D35DEFE00B28972 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				507AC3591D35DEFE00B28972 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		507AC35D1D35DEFE00B28972 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				507AC35E1D35DEFE00B28972 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		507AC3611D35DEFE00B28972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		507AC3621D35DEFE00B28972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		507AC3641D35DEFE00B28972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DatePIck2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.DatePIck2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		507AC3651D35DEFE00B28972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DatePIck2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.DatePIck2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		507AC34C1D35DEFE00B28972 /* Build configuration list for PBXProject "DatePIck2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507AC3611D35DEFE00B28972 /* Debug */,
+				507AC3621D35DEFE00B28972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		507AC3631D35DEFE00B28972 /* Build configuration list for PBXNativeTarget "DatePIck2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507AC3641D35DEFE00B28972 /* Debug */,
+				507AC3651D35DEFE00B28972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 507AC3491D35DEFE00B28972 /* Project object */;
+}
+//
+//  AppDelegate.swift
+//  First
+//
+//  Created by micheal kent on 7/11/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+}
+
+//
+//  AppDelegate.swift
+//  First
+//
+//  Created by micheal kent on 7/11/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+}
+
+//
+//  ViewController.swift
+//  First
+//
+//  Created by micheal kent on 7/11/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController, UITextFieldDelegate {
+
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBAction func buttonClicked(sender: AnyObject) {
+    
+        print("button clicked");
+        label.text = "Hello, \(textField.text!)"
+        textField.resignFirstResponder()
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        //textField.delegate = self
+        
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.textField.resignFirstResponder()
+        return false  // don't do what text field should return normally does
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+//
+//  ViewController.swift
+//  First
+//
+//  Created by micheal kent on 7/11/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController, UITextFieldDelegate {
+
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBAction func buttonClicked(sender: AnyObject) {
+    
+        print("button clicked");
+        label.text = "Hello, \(textField.text!)"
+        textField.resignFirstResponder()
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        //textField.delegate = self
+        
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.textField.resignFirstResponder()
+        return false  // don't do what text field should return normally does
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		504F5FB01D3471BA0072E786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F5FAF1D3471BA0072E786 /* AppDelegate.swift */; };
+		504F5FB21D3471BA0072E786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504F5FB11D3471BA0072E786 /* ViewController.swift */; };
+		504F5FB51D3471BA0072E786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504F5FB31D3471BA0072E786 /* Main.storyboard */; };
+		504F5FB71D3471BA0072E786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504F5FB61D3471BA0072E786 /* Assets.xcassets */; };
+		504F5FBA1D3471BA0072E786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504F5FB81D3471BA0072E786 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		504F5FAC1D3471BA0072E786 /* First.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = First.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		504F5FAF1D3471BA0072E786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		504F5FB11D3471BA0072E786 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		504F5FB41D3471BA0072E786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		504F5FB61D3471BA0072E786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		504F5FB91D3471BA0072E786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		504F5FBB1D3471BA0072E786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		504F5FA91D3471BA0072E786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		504F5FA31D3471BA0072E786 = {
+			isa = PBXGroup;
+			children = (
+				504F5FAE1D3471BA0072E786 /* First */,
+				504F5FAD1D3471BA0072E786 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		504F5FAD1D3471BA0072E786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504F5FAC1D3471BA0072E786 /* First.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504F5FAE1D3471BA0072E786 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				504F5FAF1D3471BA0072E786 /* AppDelegate.swift */,
+				504F5FB11D3471BA0072E786 /* ViewController.swift */,
+				504F5FB31D3471BA0072E786 /* Main.storyboard */,
+				504F5FB61D3471BA0072E786 /* Assets.xcassets */,
+				504F5FB81D3471BA0072E786 /* LaunchScreen.storyboard */,
+				504F5FBB1D3471BA0072E786 /* Info.plist */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		504F5FAB1D3471BA0072E786 /* First */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504F5FBE1D3471BA0072E786 /* Build configuration list for PBXNativeTarget "First" */;
+			buildPhases = (
+				504F5FA81D3471BA0072E786 /* Sources */,
+				504F5FA91D3471BA0072E786 /* Frameworks */,
+				504F5FAA1D3471BA0072E786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = First;
+			productName = First;
+			productReference = 504F5FAC1D3471BA0072E786 /* First.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504F5FA41D3471BA0072E786 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "micheal kent";
+				TargetAttributes = {
+					504F5FAB1D3471BA0072E786 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 504F5FA71D3471BA0072E786 /* Build configuration list for PBXProject "First" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 504F5FA31D3471BA0072E786;
+			productRefGroup = 504F5FAD1D3471BA0072E786 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504F5FAB1D3471BA0072E786 /* First */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		504F5FAA1D3471BA0072E786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504F5FBA1D3471BA0072E786 /* LaunchScreen.storyboard in Resources */,
+				504F5FB71D3471BA0072E786 /* Assets.xcassets in Resources */,
+				504F5FB51D3471BA0072E786 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		504F5FA81D3471BA0072E786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504F5FB21D3471BA0072E786 /* ViewController.swift in Sources */,
+				504F5FB01D3471BA0072E786 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		504F5FB31D3471BA0072E786 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504F5FB41D3471BA0072E786 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		504F5FB81D3471BA0072E786 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504F5FB91D3471BA0072E786 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		504F5FBC1D3471BA0072E786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		504F5FBD1D3471BA0072E786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		504F5FBF1D3471BA0072E786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = First/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.First;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		504F5FC01D3471BA0072E786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = First/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.First;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504F5FA71D3471BA0072E786 /* Build configuration list for PBXProject "First" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504F5FBC1D3471BA0072E786 /* Debug */,
+				504F5FBD1D3471BA0072E786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504F5FBE1D3471BA0072E786 /* Build configuration list for PBXNativeTarget "First" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504F5FBF1D3471BA0072E786 /* Debug */,
+				504F5FC01D3471BA0072E786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 504F5FA41D3471BA0072E786 /* Project object */;
+}
+//
+//  AppDelegate.swift
+//  FirstV2
+//
+//  Created by micheal kent on 7/12/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+}
+
+//
+//  AppDelegate.swift
+//  FirstV2
+//
+//  Created by micheal kent on 7/12/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+}
+
+//
+//  ViewController.swift
+//  FirstV2
+//
+//  Created by micheal kent on 7/12/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var getDatePicker: UIDatePicker!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    @IBAction func sendDateButton(sender: AnyObject) {
+        
+        let date:NSDate = getDatePicker.date
+        let formatter:NSDateFormatter = NSDateFormatter()
+        formatter.dateFormat = "EEEE"
+        dateLabel.text = formatter.stringFromDate(date)
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+//
+//  ViewController.swift
+//  FirstV2
+//
+//  Created by micheal kent on 7/12/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var getDatePicker: UIDatePicker!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    @IBAction func sendDateButton(sender: AnyObject) {
+        
+        let date:NSDate = getDatePicker.date
+        let formatter:NSDateFormatter = NSDateFormatter()
+        formatter.dateFormat = "EEEE"
+        dateLabel.text = formatter.stringFromDate(date)
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		507AC3221D35C6B100B28972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507AC3211D35C6B100B28972 /* AppDelegate.swift */; };
+		507AC3241D35C6B100B28972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507AC3231D35C6B100B28972 /* ViewController.swift */; };
+		507AC3271D35C6B200B28972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507AC3251D35C6B200B28972 /* Main.storyboard */; };
+		507AC3291D35C6B200B28972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507AC3281D35C6B200B28972 /* Assets.xcassets */; };
+		507AC32C1D35C6B200B28972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507AC32A1D35C6B200B28972 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		507AC31E1D35C6B100B28972 /* FirstV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		507AC3211D35C6B100B28972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		507AC3231D35C6B100B28972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		507AC3261D35C6B200B28972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		507AC3281D35C6B200B28972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		507AC32B1D35C6B200B28972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		507AC32D1D35C6B200B28972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		507AC31B1D35C6B100B28972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		507AC3151D35C6B100B28972 = {
+			isa = PBXGroup;
+			children = (
+				507AC3201D35C6B100B28972 /* FirstV2 */,
+				507AC31F1D35C6B100B28972 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		507AC31F1D35C6B100B28972 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				507AC31E1D35C6B100B28972 /* FirstV2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		507AC3201D35C6B100B28972 /* FirstV2 */ = {
+			isa = PBXGroup;
+			children = (
+				507AC3211D35C6B100B28972 /* AppDelegate.swift */,
+				507AC3231D35C6B100B28972 /* ViewController.swift */,
+				507AC3251D35C6B200B28972 /* Main.storyboard */,
+				507AC3281D35C6B200B28972 /* Assets.xcassets */,
+				507AC32A1D35C6B200B28972 /* LaunchScreen.storyboard */,
+				507AC32D1D35C6B200B28972 /* Info.plist */,
+			);
+			path = FirstV2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		507AC31D1D35C6B100B28972 /* FirstV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507AC3301D35C6B200B28972 /* Build configuration list for PBXNativeTarget "FirstV2" */;
+			buildPhases = (
+				507AC31A1D35C6B100B28972 /* Sources */,
+				507AC31B1D35C6B100B28972 /* Frameworks */,
+				507AC31C1D35C6B100B28972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirstV2;
+			productName = FirstV2;
+			productReference = 507AC31E1D35C6B100B28972 /* FirstV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		507AC3161D35C6B100B28972 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "micheal kent";
+				TargetAttributes = {
+					507AC31D1D35C6B100B28972 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 507AC3191D35C6B100B28972 /* Build configuration list for PBXProject "FirstV2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 507AC3151D35C6B100B28972;
+			productRefGroup = 507AC31F1D35C6B100B28972 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				507AC31D1D35C6B100B28972 /* FirstV2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		507AC31C1D35C6B100B28972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507AC32C1D35C6B200B28972 /* LaunchScreen.storyboard in Resources */,
+				507AC3291D35C6B200B28972 /* Assets.xcassets in Resources */,
+				507AC3271D35C6B200B28972 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		507AC31A1D35C6B100B28972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507AC3241D35C6B100B28972 /* ViewController.swift in Sources */,
+				507AC3221D35C6B100B28972 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		507AC3251D35C6B200B28972 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				507AC3261D35C6B200B28972 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		507AC32A1D35C6B200B28972 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				507AC32B1D35C6B200B28972 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		507AC32E1D35C6B200B28972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		507AC32F1D35C6B200B28972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		507AC3311D35C6B200B28972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FirstV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.FirstV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		507AC3321D35C6B200B28972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FirstV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.FirstV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		507AC3191D35C6B100B28972 /* Build configuration list for PBXProject "FirstV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507AC32E1D35C6B200B28972 /* Debug */,
+				507AC32F1D35C6B200B28972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		507AC3301D35C6B200B28972 /* Build configuration list for PBXNativeTarget "FirstV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507AC3311D35C6B200B28972 /* Debug */,
+				507AC3321D35C6B200B28972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 507AC3161D35C6B100B28972 /* Project object */;
+}
+//
+//  main.m
+//  HelloWorld9
+//
+//  Created by micheal kent on 7/3/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "Person.m"
+@class Person;
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        
+        // Class Objects
+        Person *alex = [[Person alloc] init];
+        [alex setWeight: 247];
+        [alex setAge: 36];
+
+        NSLog(@"Alex weighs %i lbs. and is %i years old", [alex weight], [alex age]);
+        
+        // Number Type Conversion
+        int t = 29;
+        int a = 14;
+        float s;
+        s = (float) t / a;
+        NSLog(@"Answer is %f", s);
+        
+        
+        // For Loops
+        for (int x=0; x < 10; x++) {
+            NSLog(@"x is %i", x);
+        }
+        
+        // Scanf
+        int getNum;
+        int getNum2;
+        NSLog(@"Enter a number");
+        getNum = scanf("%i", &getNum2);
+        NSLog(@"\nYou entered this number: %i \n", getNum2);
+        
+        
+        
+        
+    }
+    return 0;
+}
+//
+//  main.m
+//  HelloWorld9
+//
+//  Created by micheal kent on 7/3/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "Person.m"
+@class Person;
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        
+        // Class Objects
+        Person *alex = [[Person alloc] init];
+        [alex setWeight: 247];
+        [alex setAge: 36];
+
+        NSLog(@"Alex weighs %i lbs. and is %i years old", [alex weight], [alex age]);
+        
+        // Number Type Conversion
+        int t = 29;
+        int a = 14;
+        float s;
+        s = (float) t / a;
+        NSLog(@"Answer is %f", s);
+        
+        
+        // For Loops
+        for (int x=0; x < 10; x++) {
+            NSLog(@"x is %i", x);
+        }
+        
+        // Scanf
+        int getNum;
+        int getNum2;
+        NSLog(@"Enter a number");
+        getNum = scanf("%i", &getNum2);
+        NSLog(@"\nYou entered this number: %i \n", getNum2);
+        
+        
+        
+        
+    }
+    return 0;
+}
+//
+//  Person.h
+//  HelloWorld9
+//
+//  Created by micheal kent on 7/3/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Person : NSObject {
+    int age;
+    int weight;
+}
+-(void) setAge: (int) a;
+-(void) setWeight: (int) w;
+-(int) age;
+-(int) weight;
+@end
+//
+//  Person.h
+//  HelloWorld9
+//
+//  Created by micheal kent on 7/3/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Person : NSObject {
+    int age;
+    int weight;
+}
+-(void) setAge: (int) a;
+-(void) setWeight: (int) w;
+-(int) age;
+-(int) weight;
+@end
+//
+//  Person.m
+//  HelloWorld9
+//
+//  Created by micheal kent on 7/3/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+#import "Person.h"
+
+@implementation Person
+
+int age;
+int weight;
+
+-(void) setAge: (int) a {
+    age = a;
+}
+-(void) setWeight: (int) w {
+    weight = w;
+}
+-(int) age; {
+    return age;
+}
+-(int) weight; {
+    return weight;
+}
+
+@end
+//
+//  Person.m
+//  HelloWorld9
+//
+//  Created by micheal kent on 7/3/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+#import "Person.h"
+
+@implementation Person
+
+int age;
+int weight;
+
+-(void) setAge: (int) a {
+    age = a;
+}
+-(void) setWeight: (int) w {
+    weight = w;
+}
+-(int) age; {
+    return age;
+}
+-(int) weight; {
+    return weight;
+}
+
+@end
+//
+//  AppDelegate.swift
+//  Picker
+//
+//  Created by micheal kent on 7/13/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+}
+
+//
+//  AppDelegate.swift
+//  Picker
+//
+//  Created by micheal kent on 7/13/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
+}
+
+//
+//  ViewController.swift
+//  Picker
+//
+//  Created by micheal kent on 7/13/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController, UIPickerViewDataSource,
+UIPickerViewDelegate {
+
+    
+    let days:[String] = [
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return days.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return days[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print("\(days[row])")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+//
+//  ViewController.swift
+//  Picker
+//
+//  Created by micheal kent on 7/13/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController, UIPickerViewDataSource,
+UIPickerViewDelegate {
+
+    
+    let days:[String] = [
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return days.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return days[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print("\(days[row])")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C9F7DF1D371419001AA146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9F7DE1D371419001AA146 /* AppDelegate.swift */; };
+		50C9F7E11D371419001AA146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9F7E01D371419001AA146 /* ViewController.swift */; };
+		50C9F7E41D371419001AA146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C9F7E21D371419001AA146 /* Main.storyboard */; };
+		50C9F7E61D371419001AA146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C9F7E51D371419001AA146 /* Assets.xcassets */; };
+		50C9F7E91D371419001AA146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C9F7E71D371419001AA146 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50C9F7DB1D371419001AA146 /* Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C9F7DE1D371419001AA146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50C9F7E01D371419001AA146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50C9F7E31D371419001AA146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50C9F7E51D371419001AA146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50C9F7E81D371419001AA146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50C9F7EA1D371419001AA146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C9F7D81D371419001AA146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C9F7D21D371419001AA146 = {
+			isa = PBXGroup;
+			children = (
+				50C9F7DD1D371419001AA146 /* Picker */,
+				50C9F7DC1D371419001AA146 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50C9F7DC1D371419001AA146 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C9F7DB1D371419001AA146 /* Picker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C9F7DD1D371419001AA146 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				50C9F7DE1D371419001AA146 /* AppDelegate.swift */,
+				50C9F7E01D371419001AA146 /* ViewController.swift */,
+				50C9F7E21D371419001AA146 /* Main.storyboard */,
+				50C9F7E51D371419001AA146 /* Assets.xcassets */,
+				50C9F7E71D371419001AA146 /* LaunchScreen.storyboard */,
+				50C9F7EA1D371419001AA146 /* Info.plist */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C9F7DA1D371419001AA146 /* Picker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C9F7ED1D371419001AA146 /* Build configuration list for PBXNativeTarget "Picker" */;
+			buildPhases = (
+				50C9F7D71D371419001AA146 /* Sources */,
+				50C9F7D81D371419001AA146 /* Frameworks */,
+				50C9F7D91D371419001AA146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Picker;
+			productName = Picker;
+			productReference = 50C9F7DB1D371419001AA146 /* Picker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C9F7D31D371419001AA146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "micheal kent";
+				TargetAttributes = {
+					50C9F7DA1D371419001AA146 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 50C9F7D61D371419001AA146 /* Build configuration list for PBXProject "Picker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50C9F7D21D371419001AA146;
+			productRefGroup = 50C9F7DC1D371419001AA146 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C9F7DA1D371419001AA146 /* Picker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C9F7D91D371419001AA146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C9F7E91D371419001AA146 /* LaunchScreen.storyboard in Resources */,
+				50C9F7E61D371419001AA146 /* Assets.xcassets in Resources */,
+				50C9F7E41D371419001AA146 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C9F7D71D371419001AA146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C9F7E11D371419001AA146 /* ViewController.swift in Sources */,
+				50C9F7DF1D371419001AA146 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50C9F7E21D371419001AA146 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C9F7E31D371419001AA146 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50C9F7E71D371419001AA146 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C9F7E81D371419001AA146 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50C9F7EB1D371419001AA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50C9F7EC1D371419001AA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50C9F7EE1D371419001AA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Picker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.Picker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50C9F7EF1D371419001AA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Picker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.Picker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C9F7D61D371419001AA146 /* Build configuration list for PBXProject "Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C9F7EB1D371419001AA146 /* Debug */,
+				50C9F7EC1D371419001AA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C9F7ED1D371419001AA146 /* Build configuration list for PBXNativeTarget "Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C9F7EE1D371419001AA146 /* Debug */,
+				50C9F7EF1D371419001AA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50C9F7D31D371419001AA146 /* Project object */;
+}
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C9F81B1D37231D001AA146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9F81A1D37231D001AA146 /* AppDelegate.swift */; };
+		50C9F81D1D37231D001AA146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9F81C1D37231D001AA146 /* ViewController.swift */; };
+		50C9F8201D37231D001AA146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C9F81E1D37231D001AA146 /* Main.storyboard */; };
+		50C9F8221D37231D001AA146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C9F8211D37231D001AA146 /* Assets.xcassets */; };
+		50C9F8251D37231D001AA146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C9F8231D37231D001AA146 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50C9F8171D37231D001AA146 /* SliderProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C9F81A1D37231D001AA146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50C9F81C1D37231D001AA146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50C9F81F1D37231D001AA146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50C9F8211D37231D001AA146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50C9F8241D37231D001AA146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50C9F8261D37231D001AA146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C9F8141D37231D001AA146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C9F80E1D37231D001AA146 = {
+			isa = PBXGroup;
+			children = (
+				50C9F8191D37231D001AA146 /* SliderProgress */,
+				50C9F8181D37231D001AA146 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50C9F8181D37231D001AA146 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C9F8171D37231D001AA146 /* SliderProgress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C9F8191D37231D001AA146 /* SliderProgress */ = {
+			isa = PBXGroup;
+			children = (
+				50C9F81A1D37231D001AA146 /* AppDelegate.swift */,
+				50C9F81C1D37231D001AA146 /* ViewController.swift */,
+				50C9F81E1D37231D001AA146 /* Main.storyboard */,
+				50C9F8211D37231D001AA146 /* Assets.xcassets */,
+				50C9F8231D37231D001AA146 /* LaunchScreen.storyboard */,
+				50C9F8261D37231D001AA146 /* Info.plist */,
+			);
+			path = SliderProgress;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C9F8161D37231D001AA146 /* SliderProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C9F8291D37231D001AA146 /* Build configuration list for PBXNativeTarget "SliderProgress" */;
+			buildPhases = (
+				50C9F8131D37231D001AA146 /* Sources */,
+				50C9F8141D37231D001AA146 /* Frameworks */,
+				50C9F8151D37231D001AA146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SliderProgress;
+			productName = SliderProgress;
+			productReference = 50C9F8171D37231D001AA146 /* SliderProgress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C9F80F1D37231D001AA146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "micheal kent";
+				TargetAttributes = {
+					50C9F8161D37231D001AA146 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 50C9F8121D37231D001AA146 /* Build configuration list for PBXProject "SliderProgress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50C9F80E1D37231D001AA146;
+			productRefGroup = 50C9F8181D37231D001AA146 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C9F8161D37231D001AA146 /* SliderProgress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C9F8151D37231D001AA146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C9F8251D37231D001AA146 /* LaunchScreen.storyboard in Resources */,
+				50C9F8221D37231D001AA146 /* Assets.xcassets in Resources */,
+				50C9F8201D37231D001AA146 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C9F8131D37231D001AA146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C9F81D1D37231D001AA146 /* ViewController.swift in Sources */,
+				50C9F81B1D37231D001AA146 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50C9F81E1D37231D001AA146 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C9F81F1D37231D001AA146 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50C9F8231D37231D001AA146 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C9F8241D37231D001AA146 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50C9F8271D37231D001AA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50C9F8281D37231D001AA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50C9F82A1D37231D001AA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SliderProgress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.SliderProgress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50C9F82B1D37231D001AA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SliderProgress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexhawley.SliderProgress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C9F8121D37231D001AA146 /* Build configuration list for PBXProject "SliderProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C9F8271D37231D001AA146 /* Debug */,
+				50C9F8281D37231D001AA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C9F8291D37231D001AA146 /* Build configuration list for PBXNativeTarget "SliderProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C9F82A1D37231D001AA146 /* Debug */,
+				50C9F82B1D37231D001AA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50C9F80F1D37231D001AA146 /* Project object */;
+}
