@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwitchSegmentActvity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Eg3-8z-fPP">
+                                <rect key="frame" x="20" y="20" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="h6D-8l-COK"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCm-Dd-iV6">
+                                <rect key="frame" x="20" y="69" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="4RC-Rh-R5o"/>
+                                </connections>
+                            </switch>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LQJ-lw-RU7">
+                                <rect key="frame" x="20" y="122" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LQJ-lw-RU7" firstAttribute="leading" secondItem="Eg3-8z-fPP" secondAttribute="leading" id="3vR-nM-PEd"/>
+                            <constraint firstItem="Eg3-8z-fPP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7z7-Wt-w9R"/>
+                            <constraint firstItem="LQJ-lw-RU7" firstAttribute="leading" secondItem="nCm-Dd-iV6" secondAttribute="leading" id="M67-is-Nar"/>
+                            <constraint firstItem="LQJ-lw-RU7" firstAttribute="top" secondItem="nCm-Dd-iV6" secondAttribute="bottom" constant="26" id="THx-yk-eap"/>
+                            <constraint firstItem="nCm-Dd-iV6" firstAttribute="top" secondItem="Eg3-8z-fPP" secondAttribute="bottom" constant="21" id="bkb-Nt-GT1"/>
+                            <constraint firstItem="Eg3-8z-fPP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x0I-rB-Aqz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myActivityController" destination="LQJ-lw-RU7" id="M4E-9y-gHd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
