@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwitchSegmentActvity
+//  ViewHierarchy
 //
 //  Created by micheal kent on 7/17/16.
 //  Copyright © 2016 micheal kent. All rights reserved.

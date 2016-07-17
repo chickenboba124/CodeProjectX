@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  SizeClassesFont
 //
-//  Created by alex hawley on 7/17/16.
-//  Copyright © 2016 alex hawley. All rights reserved.
+//  Created by micheal kent on 7/17/16.
+//  Copyright © 2016 micheal kent. All rights reserved.
 //
 
 import UIKit
